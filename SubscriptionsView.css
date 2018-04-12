@@ -1,0 +1,58 @@
+/* Default row background is black */
+.table-row-cell {
+    -fx-background-color: red;
+}
+
+/* Text in the rows will be white */
+.table-row-cell .text {
+       -fx-fill: #6fd362;
+	-fx-text-alignment: center;
+
+}
+
+/*
+Pseudo class 'up' will change the row background
+ color to green when activated 
+ */
+.table-row-cell:up 
+{
+    -fx-background-color: green; 
+}
+
+/*
+Pseudo class 'down' will change the row background 
+color to red when activated
+*/
+.table-row-selection {
+    -fx-background-color: white;
+}
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: black;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+.table-row-cell:focused:filled:even{
+	-fx-background-color: darkblue;
+}
+.table-view:row-selection{
+	-fx-background-color: red;
+}
+.text {
+	
+}
+.table-view .filler{
+	-fx-background-color: lightblue;
+}
+.table-view:row-selection .virtual-flow .clipped-container .sheet .table-row-cell {
+	-fx-background-color: darkblue;
+	<font-style>: bold;
+}
+.table-view:row-selection .virtual-flow .clipped-container .sheet .table-row-cell:filled:even .table-column:filled:even .text {
+	-fx-text-alignment: center;
+}
